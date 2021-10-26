@@ -12,12 +12,11 @@
     <h2><%= error %></h2>
     <% } %>
     <ul>
-      <% greatestMovies.forEach(function(greatestMovie { %>
+      <% greatestMovies.forEach(function(greatestMovie) { %>
         <li>
-          <%=greatestMovie.text %>
+          <%= greatestMovie.text %>
           -
-          <% greatestMovie.done ? 'done' : 'not done' %>
-
+          <% greatestMovie.done ? 'greatestMovie' : 'not greatestMovie' %>
         </li>
      <% })%>
     </ul>
