@@ -1,7 +1,7 @@
 import express from 'express'
-import express from 'express'
 
-import * as greatestMovies from './data/greatestMovies'
+
+import * as greatestMovies from './data/greatestMovies.js'
 
 
 const app = express()
@@ -19,7 +19,7 @@ app.get('/home', function(req, res) {
 app.get('/greatestMovies', function(req, res) {
   greatestMovies.find({}, function(error, greatestMovies) {
     greatestMovies : greatestMovies,
-    error : error
+    error
   })
 })
 
