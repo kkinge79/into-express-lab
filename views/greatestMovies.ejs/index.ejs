@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Unit 1 Project</title>
+  <title>greatestMovies</title>
 </head>
 <body>
   <h1>Greatest Movies</h1>
@@ -16,9 +16,11 @@
         <li>
           <%= greatestMovie.text %>
           -
-          <% greatestMovie.done ? 'greatestMovie' : 'not greatestMovie' %>
+          <%= greatestMovie.year %>
+          -
+          <%= greatestMovie.ratings %>
         </li>
-     <% })%>
+      <% }) %>
     </ul>
 </body>
 </html>

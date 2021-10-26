@@ -1,8 +1,14 @@
 
 const greatestMovies = [
-  {text: 'Gremlins 2', greatestMovies: true, _id: 125223},
-  {text: 'Shrek 3', greatistMovies: false, _id: 127904},
-  {text: 'Dude wheres my car', greatestMovies: false, _id: 139608},
+  {text: 'Gremlins 2', year: 1990, ratings: '⭐️⭐️⭐️'},
+  {text: 'Shrek 3', year: 2007, ratings: '⭐️⭐️⭐️⭐️'},
+  {text: 'Dude wheres my car', year: 2000, ratings: '⭐️⭐️'},
+  {text: 'Midsommar', year: 2019, ratings: '⭐️⭐️⭐️⭐️'},
+  {text: 'Matrix', year: 1999, ratings: '⭐️⭐️⭐️⭐️'},
+  {text: 'Flubber', year: 1997, ratings: '⭐️⭐️⭐️⭐️⭐️'},
+  {text: 'A Night at the Roxbury', year: 1998, ratings: '⭐️⭐️⭐️⭐️'},
+  {text: 'Shrek 2', year: 2004, ratings: '⭐️⭐️⭐️⭐️⭐️'},
+  {text: 'Lord of the Rings: Twin Towers', year: 2002, ratings: '⭐️⭐️⭐️⭐️⭐️'},
 ]
 
 const find = (conditions, callback) => {

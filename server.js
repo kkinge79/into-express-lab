@@ -1,6 +1,5 @@
 import express from 'express'
 
-
 import * as greatestMovies from './data/greatestMovies.js'
 
 
@@ -19,8 +18,8 @@ app.get('/home', function(req, res) {
 app.get('/greatestMovies', function(req, res) {
   greatestMovies.find({}, function(error, greatestMovies) {
     res.render('greatestMovies.ejs/index', {
+      error : error,
     greatestMovies : greatestMovies,
-    error
     })
   })
 })
